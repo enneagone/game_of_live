@@ -18,3 +18,80 @@ On peut également formuler cette évolution ainsi :
     si une cellule a exactement trois voisines vivantes, elle est vivante à l’étape suivante. 
     si une cellule a exactement deux voisines vivantes, elle reste dans son état actuel à l’étape suivante.
     si une cellule a strictement moins de deux ou strictement plus de trois voisines vivantes, elle est morte à l’étape suivante. 
+
+
+## API: Flask API 
+
+### Route init
+ 
+*Route* : `/init_game`  
+*Paramettres :*  
+- format : `JSON`
+```json
+    {
+        "start_points": [[int,int]], # no required
+        "length": int, # no required
+        "width": int # no required
+    }
+```
+
+- start_points: coordoné des cellule vivante
+- lenght: hauteur du tableau
+- width: largeur
+
+
+*reponse* :
+- format : `JSON`
+
+````json
+{
+  "alive_cell_points": [[int,int]],
+  "length": int, 
+  "width": int,
+  "nb_alive_cell": int
+}
+````
+- start_points: coordoné des cellule vivante
+- lenght: hauteur du tableau
+- width: largeur
+- nb_alive_cell: nombre de cellule vivante
+
+
+
+### Route next tour
+ 
+*Route* : `/next_tour`  
+*Paramettres :*  
+- format : `JSON`
+```json
+    {
+        "start_points": [[int,int]], # no required
+        "length": int, # no required
+        "width": int, # no required
+        "nb_tour": int # no required
+    }
+```
+
+- start_points: coordoné des cellule vivante
+- lenght: hauteur du tableau
+- width: largeur
+- nb_tour: nombre de tour a effectuer
+
+
+*reponse* :
+- format : `JSON`
+
+````json
+{
+  "alive_cell_points": [[int,int]],
+  "length": int, 
+  "width": int,
+  "nb_alive_cell": int
+}
+````
+- start_points: coordoné des cellule vivante
+- lenght: hauteur du tableau
+- width: largeur
+- nb_alive_cell: nombre de cellule vivante
+
+
