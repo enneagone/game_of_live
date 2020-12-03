@@ -1,6 +1,6 @@
 import copy
 
-from model.graph.game_of_life_graph import GameOfLifeGraph
+from app.model.graph.game_of_life_graph import GameOfLifeGraph
 
 filter_condition = lambda item: item is not None
 

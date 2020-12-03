@@ -1,6 +1,4 @@
-import pytest
-
-from model.graph.game_of_life_graph import GameOfLifeGraph
+from app.model.graph.game_of_life_graph import GameOfLifeGraph
 
 
 def test_create_graph():

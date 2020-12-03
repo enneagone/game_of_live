@@ -1,6 +1,4 @@
-import pytest
-
-from model.cellule.cell_class import Cell
+from app.model.cellule.cell_class import Cell
 
 
 def test_cellule_live_class():

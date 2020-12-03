@@ -1,6 +1,6 @@
 from __future__ import annotations
 
-from model.cellule.cell_class import Cell
+from app.model.cellule.cell_class import Cell
 
 
 class CellVertices:

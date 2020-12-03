@@ -1,7 +1,7 @@
 from __future__ import annotations
 from abc import ABC, abstractmethod
 
-from model.cellule import cell_class
+from app.model.cellule import cell_class
 
 
 class CelluleState(ABC):

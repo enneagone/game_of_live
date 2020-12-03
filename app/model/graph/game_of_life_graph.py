@@ -1,6 +1,6 @@
 from typing import List
 
-from model.cellule.cell_vertices import CellVertices
+from app.model.cellule.cell_vertices import CellVertices
 
 
 class GameOfLifeGraph:

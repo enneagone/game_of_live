@@ -10,3 +10,4 @@ pyparsing==2.4.7
 pytest==6.1.2
 toml==0.10.2
 websockets==8.1
+pytest-cov

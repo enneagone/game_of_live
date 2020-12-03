@@ -1,7 +1,5 @@
-import pytest
-
-from model.graph.game_of_life_graph import GameOfLifeGraph
-from services.game_of_live_service import tour_graph
+from app.model.graph.game_of_life_graph import GameOfLifeGraph
+from app.services.game_of_live_service import tour_graph
 
 
 def test_tour_cellule_prend_vie():

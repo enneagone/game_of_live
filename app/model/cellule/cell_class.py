@@ -1,5 +1,5 @@
-from model.cellule import cell_state
-from model.cellule.cell_state import CelluleStateAlive, CelluleStateDead
+from app.model.cellule import cell_state
+from app.model.cellule.cell_state import CelluleStateAlive, CelluleStateDead
 
 
 class Cell:
