@@ -29,9 +29,21 @@ On peut également formuler cette évolution ainsi :
 - format : `JSON`
 ```json
     {
-        "start_points": [[int,int]], # no required
-        "length": int, # no required
-        "width": int # no required
+        "start_points": {
+            "type": "array",
+            "description": "coordoné des cellule vivante",
+            "required": false
+          },
+        "length": {
+            "type":  "int",
+            "description": "hauteur du tableau",
+          "required": false
+          }, 
+          "width": {
+            "type":  "int",
+            "description": "Largeur du tableau",
+            "required": false
+          }
     }
 ```
 
@@ -45,10 +57,22 @@ On peut également formuler cette évolution ainsi :
 
 ````json
 {
-  "alive_cell_points": [[int,int]],
-  "length": int, 
-  "width": int,
-  "nb_alive_cell": int
+  "alive_cell_points": {
+    "type": "array",
+    "description": "coordoné des cellule vivante"
+  },
+  "length": {
+    "type":  "int",
+    "description": "hauteur du tableau"
+  }, 
+  "width": {
+    "type":  "int",
+    "description": "Largeur du tableau"
+  }, ,
+  "nb_alive_cell": {
+    "type":  "int",
+    "description": " nombre de cellule vivante"
+  }, 
 }
 ````
 - start_points: coordoné des cellule vivante
@@ -65,10 +89,26 @@ On peut également formuler cette évolution ainsi :
 - format : `JSON`
 ```json
     {
-        "start_points": [[int,int]], # no required
-        "length": int, # no required
-        "width": int, # no required
-        "nb_tour": int # no required
+        "start_points": {
+            "type": "array",
+            "description": "coordoné des cellule vivante",
+            "required": false
+          },
+        "length": {
+            "type":  "int",
+            "description": "hauteur du tableau",
+          "required": false
+          }, 
+          "width": {
+            "type":  "int",
+            "description": "Largeur du tableau",
+            "required": false
+          }, 
+        "nb_tour": {
+          "type":  "int",
+            "description": "nombre de tour a effectuer",
+            "required": false
+        }
     }
 ```
 
@@ -83,10 +123,22 @@ On peut également formuler cette évolution ainsi :
 
 ````json
 {
-  "alive_cell_points": [[int,int]],
-  "length": int, 
-  "width": int,
-  "nb_alive_cell": int
+  "alive_cell_points": {
+    "type": "array",
+    "description": "coordoné des cellule vivante"
+  },
+  "length": {
+    "type":  "int",
+    "description": "hauteur du tableau"
+  }, 
+  "width": {
+    "type":  "int",
+    "description": "Largeur du tableau"
+  },
+  "nb_alive_cell": {
+    "type":  "int",
+    "description": " nombre de cellule vivante"
+  }, 
 }
 ````
 - start_points: coordoné des cellule vivante
