@@ -5,12 +5,6 @@ from app.model.graph.game_of_life_graph import GameOfLifeGraph
 from app.services.game_of_live_service import tour_graph
 
 
-@app.route('/')
-@app.route('/index')
-def index():
-    return "hello Word"
-
-
 @app.route('/init_game', methods=['GET'])
 def init():
     json_reponse = request.get_json()
