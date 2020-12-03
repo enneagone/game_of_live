@@ -72,7 +72,7 @@ On peut également formuler cette évolution ainsi :
   "nb_alive_cell": {
     "type":  "int",
     "description": " nombre de cellule vivante"
-  }, 
+  }
 }
 ````
 - start_points: coordoné des cellule vivante
@@ -138,7 +138,7 @@ On peut également formuler cette évolution ainsi :
   "nb_alive_cell": {
     "type":  "int",
     "description": " nombre de cellule vivante"
-  }, 
+  }
 }
 ````
 - start_points: coordoné des cellule vivante
