@@ -12,3 +12,4 @@ toml==0.10.2
 websockets==8.1
 pytest-cov
 Flask
+flask-cors

@@ -31,7 +31,7 @@ def init():
     return jsonify(graph.graph_to_json())
 
 
-@app.route('/next_tour')
+@app.route('/next_tour', methods=['POST'])
 def next_tour():
     json_reponse = request.get_json()
 

@@ -22,9 +22,24 @@ On peut également formuler cette évolution ainsi :
 
 ## API: Flask API 
 
+### Lancement de l'API :
+
+Il est recomandé de ce mettre dans un virtuale env.  
+Instalation des dependances :
+```
+pip install -r requirements.txt
+```
+Definir la varioabe d'env ``FLASK_APP=run.py``
+
+lancer la commande :
+```
+flask run
+```
+
 ### Route init
  
-*Route* : `/init_game`  
+*Route* : `/init_game`
+*Methode* : `GET`
 *Paramettres :*  
 - format : `JSON`
 ```json
@@ -84,7 +99,8 @@ On peut également formuler cette évolution ainsi :
 
 ### Route next tour
  
-*Route* : `/next_tour`  
+*Route* : `/next_tour` 
+*Methode* : `POST`
 *Paramettres :*  
 - format : `JSON`
 ```json
@@ -147,3 +163,24 @@ On peut également formuler cette évolution ainsi :
 - nb_alive_cell: nombre de cellule vivante
 
 
+## Exemple d'interface 
+
+Pour montré un exemple l'utilisation de notre API nous avons mis en place une petite application REACT dans le dossier web
+
+aller dans le dossier `./web`
+
+```
+yarn install
+yarn start
+```
+
+vous aurrez une page avec deux bouton `start` et `next`
+
+Apuiez sur start puis plusieur fois sur next.
+Nous avons mis en place une figure de la grenolle
+
+
+![grenouille fermet](./doc/img.png)
+
+
+![grenouille ouvert](./doc/img_1.png)
