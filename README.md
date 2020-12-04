@@ -1,5 +1,6 @@
 # Game of Live
 
+Nom de l'équipe : Les Casseurs Flutter
 
 Le jeu de la vie a été inventé par le mathématicien John H. Conway en 1970. C’est un « jeu à zéro joueur », puisqu'il ne nécessite pas l'intervention du joueur lors de son déroulement. Il est un bon exemple d’un système où une règle locale simple donne lieu à un comportement global complexe. 
  
